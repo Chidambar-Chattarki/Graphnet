@@ -31,6 +31,9 @@ $white: #ffffff;
 // new Class
 
 .image-state2 .rt-image-upload__controls{
+    &:hover .rt-image-upload__actions{
+        background-color:transparent;
+    }
     .rt-image-input__label {
         @include pos-abs-label;
         color: $rgba-56;
@@ -47,9 +50,7 @@ $white: #ffffff;
         transform: none;
     }
 
-    // &:hover .rt-image-upload__actions{
-    //     background-color:transparent;
-    // }
+    
     
 }
 
