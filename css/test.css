@@ -7,10 +7,6 @@ html {
   width: 240px;
 }
 
-.image-state2 .rt-image-upload__controls:hover {
-  background-color: transparent;
-}
-
 .image-state2 .rt-image-upload__controls .rt-image-input__label {
   position: absolute;
   bottom: 24px;

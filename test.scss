@@ -37,9 +37,9 @@ $white: #ffffff;
    
 .image-state2 .rt-image-upload__controls{
 
-    &:hover {
-        background-color:transparent;
-    }
+    // &:hover {
+    //     background-color:transparent;
+    // }
 
     .rt-image-input__label {
         @include pos-abs-label;
