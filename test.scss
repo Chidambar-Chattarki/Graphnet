@@ -8,16 +8,16 @@ html{
 $d-block: block;
 $d-in-block: inline-block;
 $rgba-56: rgba(0, 0, 0, 0.56);
-$f-24: 24px;
+$f-24: 20px;
 $white: #ffffff;
 
 // Mixins 
 @mixin pos-abs-label {
     position: absolute;
     bottom: 24px;
-    top: 1%;
+    top: 30%;
     bottom: auto;
-    right: -37%;
+    right: -66%;
     left: auto;
     font-size: 11px;
 }
@@ -30,44 +30,57 @@ $white: #ffffff;
 
 // new Class
 
+.rt-image-upload.image-state2{
+    width:240px; 
+  }
+
+   
 .image-state2 .rt-image-upload__controls{
-    &:hover .rt-image-upload__actions{
+
+    &:hover {
         background-color:transparent;
     }
+
     .rt-image-input__label {
         @include pos-abs-label;
         color: $rgba-56;
-        font-size: $f24;
-        
+        font-size: $f-24;
     }
     .buttons {
         display: $d-block;
         position: absolute;
-        top: 20%;
-        right: -55%;
+        top: 50%;
+        right: -57%;
         left: auto;
         bottom: auto;
         transform: none;
-    }
 
-    
-    
+        .attach {
+            @include btn-spec;
+            color: #000000;
+        }
+
+        .delete {
+            display: none;
+        }
+
+        .delete:hover {
+            background-color: $white;
+        }
+
+    }
 }
 
-
+.image-state2 .rt-image-upload__controls.--has-image:hover .rt-image-upload__actions{
+        background-color: transparent;
+}
 
 .image-state2 .rt-image-upload__controls.--has-image{
-    &:hover {
-        .rt-image-upload__actions{
-            background-color: transparent;
-        }
-    }
     
-
     .rt-image-input__label {
         @include pos-abs-label;
         color: $rgba-56;
-        font-size: $f24;
+        font-size: $f-24;
     }
 
     img {
@@ -76,14 +89,15 @@ $white: #ffffff;
     .buttons {
         display: $d-block;
         position: absolute;
-        top: 20%;
-        right: -55%;
+        top: 50%;
+        right: -110%;
         left: auto;
         bottom: auto;
         transform: none;
 
             .attach {
                 @include btn-spec;
+                color: #000000;
             }
 
             .delete {

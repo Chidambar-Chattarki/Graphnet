@@ -3,28 +3,66 @@ html {
   font-size: 16px;
 }
 
+.rt-image-upload.image-state2 {
+  width: 240px;
+}
+
+.image-state2 .rt-image-upload__controls:hover {
+  background-color: transparent;
+}
+
 .image-state2 .rt-image-upload__controls .rt-image-input__label {
   position: absolute;
   bottom: 24px;
-  top: 1%;
+  top: 30%;
   bottom: auto;
-  right: -37%;
+  right: -66%;
   left: auto;
   font-size: 11px;
   color: rgba(0, 0, 0, 0.56);
-  font-size: 24px;
+  font-size: 20px;
+}
+
+.image-state2 .rt-image-upload__controls .buttons {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -57%;
+  left: auto;
+  bottom: auto;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.image-state2 .rt-image-upload__controls .buttons .attach {
+  border: 0;
+  display: inline-block;
+  font-size: 20px;
+  color: #000000;
+}
+
+.image-state2 .rt-image-upload__controls .buttons .delete {
+  display: none;
+}
+
+.image-state2 .rt-image-upload__controls .buttons .delete:hover {
+  background-color: #ffffff;
+}
+
+.image-state2 .rt-image-upload__controls.--has-image:hover .rt-image-upload__actions {
+  background-color: transparent;
 }
 
 .image-state2 .rt-image-upload__controls.--has-image .rt-image-input__label {
   position: absolute;
   bottom: 24px;
-  top: 1%;
+  top: 30%;
   bottom: auto;
-  right: -37%;
+  right: -66%;
   left: auto;
   font-size: 11px;
   color: rgba(0, 0, 0, 0.56);
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .image-state2 .rt-image-upload__controls.--has-image img {
@@ -34,8 +72,8 @@ html {
 .image-state2 .rt-image-upload__controls.--has-image .buttons {
   display: block;
   position: absolute;
-  top: 20%;
-  right: -55%;
+  top: 50%;
+  right: -110%;
   left: auto;
   bottom: auto;
   -webkit-transform: none;
@@ -44,16 +82,15 @@ html {
 
 .image-state2 .rt-image-upload__controls.--has-image .buttons .attach {
   border: 0;
-  color: #000000;
   display: inline-block;
-  font-size: 24px;
+  font-size: 20px;
+  color: #000000;
 }
 
 .image-state2 .rt-image-upload__controls.--has-image .buttons .delete {
   border: 0;
-  color: red;
   display: inline-block;
-  font-size: 24px;
+  font-size: 20px;
   margin-left: 50px;
 }
 
